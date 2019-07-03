@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>router</title>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    function myFunc() {
+      $("#myForm").submit();
+    }
+  </script>
+</head>
+<body>
+  <form id="myForm" action="http://localhost:8080/news" method="post">
+    <input name="myName"/>
+    <input name="myDesc"/>
+  </form>
+
+  <input type="button" onClick="myFunc();" value="전송"/>
+</body>
+</html>
